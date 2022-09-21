@@ -15,12 +15,12 @@ const fibonacci = function(n) {
 
 function fib(n) {
     // Our base case
-    if (n <= 1) {
-        return n;
-    }
+    //if (n <= 1) {
+    //    return n;
+    //}
 
     // Lets do some recursion
-    return arguments.callee(n-1) + arguments.callee(n-2);
+    return (n <= 1) ? n : arguments.callee(n-1) + arguments.callee(n-2);
 }
 
 // Do not edit below this line
